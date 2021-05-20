@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <style>
+         body{
+        background-image: url(ait1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        margin: 0 auto;
+         }
+         
+        .eform{
+            background-color: rgba(128, 98, 98, 0.856);
+            width: 800px;
+            margin:0 auto;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border:groove black 5px; 
+            border-radius: 50px;
+        
+            
+        }
+        .admhead{
+            color:rgb(28, 68, 105);
+           
+        }
+        .finfo{
+            background-color: rgb(58, 129, 129);
+            
+                    
+        }
+
+        input[type=text]{
+  width: 50%;
+  padding: 12px 12px;
+  margin: 10px 0;
+  border: 3px solid rgb(17, 12, 12);
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+input[type=number]{
+  width: 20%;
+  padding: 12px 12px;
+  margin: 10px 0;
+  border: 3px solid rgb(17, 12, 12);
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+input[type=radio]{
+
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type=submit] {
+  width: 10%;
+  background-color: rgb(38, 38, 90);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-style: groove;
+  border-radius: 50px;
+  cursor: pointer;
+}
+input[type=email]{
+  width: 50%;
+  padding: 12px 12px;
+  margin: 10px 0;
+  border: 3px solid  rgb(17, 12, 12);
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+  background-color: orangered;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <form action="php">
+        <div class="eform">
+
+            <h1 class="admhead"> ADMISSION INQUIRY </h1>
+
+            
+
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" placeholder="enter your first name:" required><br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" placeholder="enter your last name:" required><br>
+
+            <label for="adr">Address</label>
+            <input type="text" name="adr" placeholder="1/Xyx colony,ahm,india" required><br>
+
+
+            <label for="acamst">Current Academic Status</label>
+            <input type="radio" name="acamst" value="" required>After 12th
+            <input type="radio" name="acamst" value="" required>After Diploma
+            <input type="radio" name="acamst" value="" required> After Graduation<br>
+
+            <label for="mob">Mobile Number</label>
+            <input type="number" name="mob" placeholder="mobile number" required><br>
+
+            <label for="result">Result</label>
+            <input type="number" name="result" placeholder="percentage/CGPA"><br>
+
+            <label for="Email">Email Address</label>
+            <input type="email" name="Email" value="" required><br>
+
+            <label for="sc">School/College</label>
+            <input type="text" name="sc" value="" required><br>
+
+            <label for="intr">Intrested In</label><br>
+            <input type="radio" name="intr" value="" required>MBA<br>
+            <input type="radio" name="intr" value="" required>ENGINEERING<br>
+            <input type="radio" name="intr" value="" required>M.E.<br><hr>
+
+            <label for="sbm"><h5>CONFIRM ALL ABOVE INFORMATION & SUBMIT YOUR FORM.</h5></label>
+            <input type="submit" name="sbm" value="Send" required><br>
+
+            
+
+        </div>
+    </form>
+    
+</body>
+</html>
